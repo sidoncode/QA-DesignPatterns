@@ -1,5 +1,6 @@
 package CompositePattern;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Employee {
@@ -13,6 +14,7 @@ public class Employee {
         this.name = name;
         this.dept = dept;
         this.Salary = sal;
+        subordinates = new ArrayList<Employee>();
     }
 
     public void add(Employee e){
