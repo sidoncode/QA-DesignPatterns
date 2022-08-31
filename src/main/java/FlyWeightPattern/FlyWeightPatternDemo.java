@@ -4,7 +4,11 @@ public class FlyWeightPatternDemo {
     private static final String color [] = { "RED" , "GREEN","BLUE" , "YELLOW","ORANGE" , "BLACK","WHITE"};
 
     public static void main(String [] aergs){
-
+        Circle circle = (Circle)ShapeFactory.getCircle(getRandomColor());
+        circle.setX(getRandomX());
+        circle.setY(getRandomY());
+        circle.setRadius(100);
+        circle.draw();
 
     }
 
